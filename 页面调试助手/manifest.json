@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Dev Helper",
+  "version": "1.0",
+
+  "description": "1",
+  "homepage_url": "https://github.com/RuoChen95/Learn-WebExtensions-API",
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/beasts-48.png",
+    "default_title": "Dev Helper",
+    "default_popup": "popup/devHelper.html"
+  },
+
+  "web_accessible_resources": [
+    "beasts/frog.jpg",
+    "beasts/turtle.jpg",
+    "beasts/snake.jpg"
+  ]
+
+}

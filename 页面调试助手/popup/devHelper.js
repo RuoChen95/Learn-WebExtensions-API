@@ -2,6 +2,8 @@ const outlinePage = ` * {
                         border: 1px solid red;
                     }`;
 
+var browser = browser || chrome
+
 function listenForClicks() {
     document.addEventListener("click", (e) => {
         function outliner(tabs) {
@@ -18,5 +20,5 @@ function listenForClicks() {
     })
 }
 
-browser.tabs.executeScripte({file:"/content_scripts/devHelper.js"})
-.then(listenForClicks)
+browser.tabs.executeScript({file: "/content_scripts/devHelper.js"})
+.then(listenForClicks);

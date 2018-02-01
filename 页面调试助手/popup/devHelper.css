@@ -1,24 +1,41 @@
 html, body {
-    width: 100px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
 }
 
 h1.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+
     background: orange;
     color: antiquewhite;
 }
 
-.button {
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 80px;
+}
+
+button {
     margin: 3% auto;
     padding: 4px;
     text-align: center;
     font-size: 1.5em;
     cursor: pointer;
-}
 
-.outliner:hover {
-    background-color: #CFF2F2;
-}
-
-.outliner {
     background-color: #E5F2F2;
+}
+
+button:hover {
+    background-color: #CFF2F2;
 }

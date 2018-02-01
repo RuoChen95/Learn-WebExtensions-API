@@ -4,21 +4,8 @@ const outlinePage = ` * {
 
 var browser = browser || chrome
 
-function listenForClicks() {
-    document.addEventListener("click", (e) => {
-        function outliner(tabs) {
-            browser.tabs.insertCSS({code: outlinePage})
-        }
-        function reportError(error) {
-            console.log(`Could not beastifu: ${error}`);
-        }
-        if (e.target.classList.contains('outliner')) {
-            browser.tabs.query({active:true, currentWindow:true})
-                .then(outliner)
-                .catch(reportError)
-        }
+document.getElementById('outliner').addEventListener("click", function () {
+    browser.tabs.insertCSS({
+        code: outlinePage
     })
-}
-
-browser.tabs.executeScript({file: "/content_scripts/devHelper.js"})
-.then(listenForClicks);
+})

@@ -1,10 +1,10 @@
 {
 
   "manifest_version": 2,
-  "name": "Dev Helper",
+  "name": "Reading List",
   "version": "1.0",
 
-  "description": "增加边框，方便调试",
+  "description": "1",
   "homepage_url": "https://github.com/RuoChen95/Learn-WebExtensions-API",
   "icons": {
     "48": "icons/beasts-48.png"
@@ -16,7 +16,7 @@
 
   "browser_action": {
     "default_icon": "icons/beasts-48.png",
-    "default_title": "Dev Helper",
-    "default_popup": "popup/devHelper.html"
+    "default_title": "Reading List",
+    "default_popup": "popup/readingList.html"
   }
 }
